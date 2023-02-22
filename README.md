@@ -75,4 +75,38 @@ sudo systemctl start docker
 sudo systemctl enable docker
 ```
 
+# DWAPI setup
+
+## a) New installation
+
+### 1. Install DWAPI
+
+```
+sudo docker run --name dwapi -p 5757:5757 -p 5753:5753 -d --restart unless-stopped kenyahmis/dwapi:latest
+```
+
+## MySQL setup
+
+### 2. Enter mysql
+
+```
+mysql -u[username] -p[password]
+```
+### NOTE: replace the username and password to match your own MySQL credentials. Remove the brackets as well
+
+### 3. Create a DWAPI database user for mysql
+
+```
+create database dwapi;
+```
+
+### 4. Assign privileges to the DWAPI database user for MySQL
+
+```
+GRANT ALL PRIVILEGES ON *.* TO 'dwapi'@'%' IDENTIFIED BY 'dwapi' WITH GRANT OPTION;
+```
+
+```
+FLUSH PRIVILEGES;
+```
 
