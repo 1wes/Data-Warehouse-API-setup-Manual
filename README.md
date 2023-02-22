@@ -115,6 +115,56 @@ FLUSH PRIVILEGES;
 
 ### On your browser, open dwapi on [https://localhost:5753](https://localhost:5753)
 
+## 2. Dashboard - Dwapi database connection
+
+### a) database provider-MySQL
+
+### b) Server-172.17.0.1
+
+### c) port-3306
+
+### d) user-dwapi
+
+### e) password-dwapi
+
+### f) verify server -ok
+
+### g) verify database-ok
+
+### h) save.
+
+## 3. Restart DWAPI
+
+```
+sudo docker restart dwapi
+```
+
+### Refresh browser until dwapi loads.
+
+## 4. Configurations
+
+### a) EMR Settings
+
+### KenyaEMR-On the drop down make KenyaEMR Default.
+
+### b) KenyaEMR Protocols
+
+### Under the action column, look for Host and make it  "172.17.0.1" 
+
+### verify 
+
+### should give you ok 
+
+### Save
+
+## 5. Docket
+
+### Load and send(all) the indicators(care and treatment,PKV services HIV Testing service etc)
+
+## Congrats, you are done !!!
+
+
+
 
 
 
