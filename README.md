@@ -109,4 +109,12 @@ GRANT ALL PRIVILEGES ON *.* TO 'dwapi'@'%' IDENTIFIED BY 'dwapi' WITH GRANT OPTI
 ```
 FLUSH PRIVILEGES;
 ```
+# Using DWAPI
+
+## 1. Start DWAPI
+
+### On your browser, open dwapi on [http://localhost:5753](http://localhost:5753)
+
+
+
 
