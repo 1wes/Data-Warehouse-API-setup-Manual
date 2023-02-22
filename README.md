@@ -117,7 +117,7 @@ FLUSH PRIVILEGES;
 
 ## 2. Dashboard - Dwapi database connection
 
-### a) database provider-MySQL
+### a) database provider:MySQL
 
 ### b) Server:172.17.0.1
 
@@ -145,21 +145,21 @@ sudo docker restart dwapi
 
 ### a) EMR Settings
 
-### KenyaEMR-On the drop down make KenyaEMR Default.
+KenyaEMR-On the drop down make KenyaEMR Default.
 
 ### b) KenyaEMR Protocols
 
-### Under the action column, look for Host and make it  "172.17.0.1" 
+Under the action column, look for Host and make it  "172.17.0.1" 
 
-### verify 
+verify 
 
-### should give you ok 
+should give you ok 
 
-### Save
+Save
 
 ## 5. Docket
 
-### Load and send(all) the indicators(care and treatment,PKV services HIV Testing service etc)
+Load and send(all) the indicators(care and treatment,PKV services HIV Testing service etc)
 
 ## Congrats, you are done !!!
 
