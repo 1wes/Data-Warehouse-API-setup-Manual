@@ -163,6 +163,40 @@ Load and send(all) the indicators(care and treatment,PKV services HIV Testing se
 
 ## Congrats, you are done !!!
 
+# Troubleshooting DWAPI
+
+## i) View log files
+
+```
+sudo docker exec -it dwapi ls logs
+```
+
+## ii) Copying log files folder to your pc current directory.
+
+```
+sudo docker cp dwapi:/app/logs/ .
+```
+
+# When upgrading existing DWAPI
+
+## b) Upgrading Existing Installation
+
+### 1. Upgrading DWAPI to latest version
+
+```
+sudo docker ps -a | grep "dwapi" | awk '{print $1}' | xargs sudo docker rm -f
+```
+
+```
+sudo docker images -a | grep "dwapi" | awk '{print $3}' | xargs sudo docker rmi
+```
+
+```
+sudo docker run --name dwapi -p 5757:5757 -p 5753:5753 -d --restart unless-stopped kenyahmis/dwapi:latest
+```
+
+# GO TO STEP 1 : "STARTING DWAPI"
+
 
 
 
