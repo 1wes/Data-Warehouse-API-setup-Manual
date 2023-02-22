@@ -38,3 +38,41 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 ```
+
+## 5. Installing the Latest Docker
+
+### Start by updating the repository again
+
+```
+sudo apt update
+```
+
+### Now you can install the latest Docker version with:
+
+```
+sudo apt-get install docker-ce
+```
+
+## 6. Verifying Docker Installation.
+
+### To confirm the installation check the version of Docker:
+
+```
+docker --version
+```
+
+## 7. Enable Docker Service
+
+### To start the Docker service run the following command:
+
+```
+sudo systemctl start docker
+```
+
+### Enable Docker to run at startup with:
+
+```
+sudo systemctl enable docker
+```
+
+
