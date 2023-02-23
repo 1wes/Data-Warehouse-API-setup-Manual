@@ -85,6 +85,8 @@ sudo systemctl enable docker
 sudo docker run --name dwapi -p 5757:5757 -p 5753:5753 -d --restart unless-stopped kenyahmis/dwapi:latest
 ```
 
+This will pull the remote dwapi image container and set it up in the local computer
+
 ## MySQL setup
 
 ### 2. Enter mysql
