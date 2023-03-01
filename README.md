@@ -119,15 +119,15 @@ FLUSH PRIVILEGES;
 
 ## 2. Dashboard - Dwapi database connection
 
-### a) database provider:MySQL
+### a) database provider:```MySQL```
 
-### b) Server:``` 172.17.0.1```
+### b) Server:```172.17.0.1```
 
-### c) port:``` 3306```
+### c) port:```3306```
 
-### d) user:``` dwapi```
+### d) user:```dwapi```
 
-### e) password:``` dwapi```
+### e) password:```dwapi```
 
 ### f) verify server -ok
 
